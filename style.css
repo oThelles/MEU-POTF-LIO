@@ -53,7 +53,6 @@ nav h1{
     font-size: 24px;
     transition: 0.2s;
     color: #7C18DE;
-    text-decoration: underline;
 }
 
 body{
@@ -83,7 +82,7 @@ section{
 
 .name-gradient{
     display: inline-block;
-    background: linear-gradient(360deg, #7C18DE 0%, #fff 100%);
+    background: linear-gradient(360deg, #7C18DE 0%, #fff 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -107,14 +106,6 @@ section{
     font-size: 2rem;
     transition: all 0.3s ease;
     text-decoration: none;
-}
-
-.icons-links a{
-    font-size: 3rem;
-}
-
-.icons-links a:hover{
-    font-size: 4rem;
 }
 
 .hero-text a:hover{
@@ -288,60 +279,194 @@ section{
 
 
 #habilidades{
-    background-color: #d3d3d3;
+    background-image: linear-gradient(135deg, #000000, #2d0068, #7C18DE);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 20px;
 }
 
 #habilidades h2{
     font-size: 5rem;
     font-family: "Outfit", sans-serif;
-    background: linear-gradient(45deg, #2d0068, #7C18DE);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
 }
 
+.cards-container-habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.card-habilidades-html{
+    border: solid 2px #E44D26;
+    border-radius: 6%;
+    width: 28%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.card-habilidades-html h3{
+    font-size: 3rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    color: #e6522d;
+}
+
+.card-habilidades p{
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.simbolo-html i{
+    font-size: 10.5rem;
+    color: #E44D26;
+}
+
+.card-habilidades-css{
+    border: solid 2px #1572B6;
+    border-radius: 6%;
+    width: 28%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.simbolo-css i{
+    font-size: 9rem;
+    color: #1572B6;
+}
+
+.card-habilidades-css h3{
+    font-size: 3rem;
+    color: #1572B6;
+    font-weight: 800;
+    font-family: "Outfit", sans-serif;
+}
+
+.card-habilidades-js{
+    border: solid 2px #F7DF1E;
+    border-radius: 6%;
+    width: 28%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.simbolo-js i{
+    font-size: 6rem;
+    color: #F7DF1E;
+}
+
+.card-habilidades-js h3{
+    font-size: 3rem;
+    color: #F7DF1E;
+    font-weight: 800;
+    font-family: "Outfit", sans-serif;
+}
 
 #contato{
+    background-image: linear-gradient(135deg, #000000, #2d0068, #7C18DE);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #d3d3d3;
 }
 
-.text-contact{
+.container-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.img-contato{
+    width: 50%;
+}
+
+.icons-links-contato{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 50%;
 }
 
-.text-contact h2{
-    font-size: 7rem;
+.icons-links-contato a{
+    font-size: 2.2rem;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+#instagram{
     font-family: "Outfit", sans-serif;
-    background: linear-gradient(45deg, #2d0068, #7C18DE);
+    background: linear-gradient(90deg, #FFD600, #FF3030, #E1306C, #833AB4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
 }
 
-.text-contact p{
-    font-size: 2rem;
-    font-weight: 500;
-    color: black;
+#github{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #141414;
 }
 
-.text-contact a{
-    color: black;
-    font-weight: 400;
-    font-size: 2rem;
+#whatsapp{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #25D366;
+}
+
+#email{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #EA4335;
+}
+
+.icons-links-contato a:hover{
+    font-size: 2.8rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#contato h2{
+    font-size: 6.5rem;
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+}
+
+.img-contato img{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: #7C18DE 0px 0px 20px;
 }
 
 footer{
