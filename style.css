@@ -1,0 +1,533 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.gradient{
+    background-image: linear-gradient(135deg, #000000, #2d0068, #7C18DE);
+}
+
+header{
+    min-width: 98vw;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 24rem;
+}
+
+nav h1{
+    font-size: 30px;
+    font-family: "Rock Salt", cursive;
+    font-weight: 700;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.menu li a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+
+.menu li a:hover{
+    font-size: 24px;
+    transition: 0.2s;
+    color: #7C18DE;
+}
+
+body{
+    min-height: 100vh;
+    background-color: black;
+}
+
+section{
+    min-height: 100vh;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.name-gradient{
+    display: inline-block;
+    background: linear-gradient(360deg, #7C18DE 0%, #fff 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-text h2{
+    font-size: 6rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.hero-text h2, .name-gradient{
+    line-height: 1.10;
+}
+
+.hero-text p{
+    font-size: 2rem;
+}
+
+.hero-text a{
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.hero-text a:hover{
+    color: #7C18DE;
+    transition: 0,3s;
+}
+
+#sobre, #projetos, #contato{
+    background-color: #d3d3d3;
+}
+
+#sobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 180px;
+}
+
+#sobre h3{
+    color: black;
+    font-size: 5rem;
+    font-weight: 300;
+    font-family: "Outfit", sans-serif;
+}
+
+#sobre h2{
+    font-size: 8rem;
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(130deg, #2d0068, #7C18DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#sobre p{
+    color: black;
+}
+
+.text-sobre h3, .text-sobre h1{
+    line-height: 0;
+}
+
+.description-sobre{
+    width: 500px;
+}
+
+.description-sobre p{
+    font-size: 1.4rem;
+}
+
+.description b{
+    background: linear-gradient(130deg, #2d0068, #7C18DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.line{
+    content: none;
+    width: 280px;
+    height: 5px;
+    border-radius: 40px;
+    background-image: linear-gradient(130deg, #000, #2d0068, #7C18DE);
+    margin-top: 10px;
+}
+
+#projetos{
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d3d3d3;
+}
+
+#projetos h2{
+    font-family: "Outfit", sans-serif;
+    font-size: 5rem;
+    background: linear-gradient(130deg, #2d0068, #7C18DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.grid-projetos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.card{
+    border-radius: 27px;
+    box-shadow: 5px 5px 7px  #00000060;
+    width: 300px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.card img{
+    object-fit: cover;
+    border-radius: 27px 27px 0px 0px;
+    height: 50%;
+    width: 100%;
+}
+
+.text-card{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 0px 0px 27px 27px;
+}
+
+.text-card p, .text-card a{
+    color: black;
+}
+
+.text-card p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.text-card a{
+    font-size: 1.30rem;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+}
+
+.text-card a:hover{
+    font-size: 1.60rem;
+    transition: 0.2s;
+    color: #7C18DE;
+}
+
+.text-gradient-animation{
+    background: linear-gradient(100deg, #2d0068, #7C18DE);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: moveGradient 5s ease infinite;
+    font-size: 2rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+@keyframes moveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* BLOCO DE ESTILIZAÇÃO DOS PROJETOS */
+
+
+
+
+
+
+
+
+#habilidades{
+    background-image: linear-gradient(135deg, #000000, #2d0068, #7C18DE);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#habilidades h2{
+    font-size: 5rem;
+    font-family: "Outfit", sans-serif;
+}
+
+.cards-container-habilidades{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.card-habilidades-html{
+    border: solid 2px #E44D26;
+    border-radius: 6%;
+    width: 28%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.card-habilidades-html h3{
+    font-size: 3rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    color: #e6522d;
+}
+
+.card-habilidades p{
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.simbolo-html i{
+    font-size: 10.5rem;
+    color: #E44D26;
+}
+
+.card-habilidades-css{
+    border: solid 2px #1572B6;
+    border-radius: 6%;
+    width: 28%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.simbolo-css i{
+    font-size: 9rem;
+    color: #1572B6;
+}
+
+.card-habilidades-css h3{
+    font-size: 3rem;
+    color: #1572B6;
+    font-weight: 800;
+    font-family: "Outfit", sans-serif;
+}
+
+.card-habilidades-js{
+    border: solid 2px #F7DF1E;
+    border-radius: 6%;
+    width: 28%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.simbolo-js i{
+    font-size: 6rem;
+    color: #F7DF1E;
+}
+
+.card-habilidades-js h3{
+    font-size: 3rem;
+    color: #F7DF1E;
+    font-weight: 800;
+    font-family: "Outfit", sans-serif;
+}
+
+#contato{
+    background-image: linear-gradient(135deg, #000000, #2d0068, #7C18DE);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #d3d3d3;
+}
+
+.container-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.img-contato{
+    width: 50%;
+}
+
+.icons-links-contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+}
+
+.icons-links-contato a{
+    font-size: 2.2rem;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+#instagram{
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(90deg, #FFD600, #FF3030, #E1306C, #833AB4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+#github{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #141414;
+}
+
+#whatsapp{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #25D366;
+}
+
+#email{
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-color: #EA4335;
+}
+
+.icons-links-contato a:hover{
+    font-size: 2.8rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+#contato h2{
+    font-size: 6.5rem;
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+}
+
+.img-contato img{
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: #7C18DE 0px 0px 20px;
+}
+
+footer{
+    height: 15vh;
+    background-color: #b8b8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    header{
+        display: none;
+    }
+    .hero-text h2{
+        font-size: 3.4rem;
+    }
+    .hero-text p{
+        font-size: 2rem;
+    }
+    .hero-text a{
+        font-size: 2rem;
+    }
+    #sobre{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
+    .description-sobre p{
+        font-size: 1.5rem;
+    }
+    .line{
+        display: none;
+    }
+    #habilidades h2{
+        font-size: 3.7rem;
+    }
+    .cards-container-habilidades{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .card-habilidades-html{
+        border: solid 3px #E44D26;
+        height: auto;
+        width: 57%;
+    }
+    .card-habilidades-html p{
+        padding: 1.2rem;
+    }
+}
